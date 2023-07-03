@@ -1,0 +1,95 @@
+
+
+header {
+    display:flex;
+    justify-content: space-between;
+    background-color: #000000;
+    color:white;
+    padding:10px 20px;
+    height: 60px;
+    border-bottom:10px solid #1B2A41;
+}
+
+#LogoDoSite {
+    width: 60px;
+    height: 60px;
+
+}
+#LogoDoSite:hover {
+    opacity: 0.5;
+}
+button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    transform: scale(1.08);
+}
+a:hover{
+    opacity: 0.5;
+    transform: scale(1.08);
+}
+button {
+    display: inline-block;
+    /* Se O Width Ou Heighty Não Funcionar, Mudo O Display */
+    /*
+    Inline = Remove Todos Os Widths e Heights, E Coloca Tudo Na Mesma Linha, O Mais Para Esquerda Possivel. O Bloco Ganha Comportamento de Texto
+    Block = Não É Na Mesma Linha, E Permite Height e Width, Este Display Mesmo Que Tenha Espaço Para Outro Conteudo Fora da Tag, Ele Não Irá Ficar Ao lado dos Elementos Configurados Com Display Block
+    InLine-Block = Permitite Tudo Na Mesma Linha, Permite o Width e Height, Tem Comportamento de Texto e o Conteudo da Tag Pode Ser Unido Com Outros Elementos Fora, Desde Que Sejá Inline-Block 
+    
+    OBS :
+    Se o Elemento For Block, Tem Largura e Eu Colocar Margin Auto No Left e Right, Ele Vai Centralizar o Objeto
+    */
+    width:170px;
+    height: 60px;
+    line-height: 60px;
+    /* Line-Height do Tamanho do Height Centraliza o Texto */
+    color:black;
+    background-color: white;
+    transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
+
+
+
+    /* 
+
+    Padding: TODOS-OS-LADOS-COM-MESMO-VALOR; ( 1 VALOR )
+    Padding: CIMA-BAIXO, ESQUEDA-DIREITA; ( 2 VALORES )
+    Padding: CIMA-BAIXO, ESQUERDA-DIREITA, BAIXO ( VAI SOBREESCREVER O VALOR DEBAIXO ); ( 3 VALORES )
+    Padding: TOP, RIGHT, BOTTOM, LEFT; ( 4 VALORES )
+    IGUAL UM RELOGIO GIRANDO... CIMA, DIREITA, BAIXO, ESQUEDA
+
+    */
+    
+    box-shadow: 5px 5px 1px white;
+    /* Box-Shadow: X, Y, BLUR, COR; 
+    CRIA UMA SOMBRA, VOCE DESLOCA ELA MEXENDO NO X E Y,
+    */
+}
+
+
+
+a {
+    display:inline-flex;
+    color:white;
+    font-size:20px;
+    font-family: "Fira Code";
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 30px;
+    align-items: center;
+    transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
+}
+a::before {
+    content:"";
+    width:10px;
+    height: 10px;
+    background-color: white;
+    margin-right: 5px;
+
+    /*
+    vertical-align: middle;
+    Alinha Verticalmente O Elemento em Seu Meio. 
+    Regras :
+    Só Pega Dentro de Tabelas
+    O Elemento Pai e Filho, Precisam Ser Inline-Block
+    */
+
+}
